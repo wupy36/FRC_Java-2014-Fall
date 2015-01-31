@@ -37,6 +37,7 @@ public class Dt extends Subsystem {
 	}
 	public static void driveWithJoystick(Joystick stick){
 		drive.arcadeDrive(stick);
+		
 		double m01 = SmartDashboard.getDouble("Velocity");
 		SmartDashboard.putDouble("V1", m01);
 		m1.set(m01);
